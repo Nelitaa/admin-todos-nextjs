@@ -138,7 +138,19 @@ To start the database, use Docker. Execute the following command:
   docker compose up -d
 ```
 
+To set environment variables, follow these steps:
+
+1. Rename the file `.env.template` to `.env`.
+2. Open the `.env` file in a text editor.
+3. Replace the values of the environment variables as needed with your specific environment configuration.
+
 To run the project, execute the following command:
+
+Prisma commands:
+
+```
+npx prisma init
+```
 
 ### Run tests
 
