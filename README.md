@@ -143,6 +143,7 @@ To set environment variables, follow these steps:
 1. Rename the file `.env.template` to `.env`.
 2. Open the `.env` file in a text editor.
 3. Replace the values of the environment variables as needed with your specific environment configuration.
+4. Run SEED to create the local database(localhost:3000/api/seed)
 
 To run the project, execute the following command:
 
