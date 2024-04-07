@@ -132,27 +132,27 @@ Example command:
 
 ### Usage
 
-To start the database, use Docker. Execute the following command:
+To run the project, follow these steps:
+
+1. To start the database, use Docker. Run the command: `docker compose up -d`
+2. Create a copy of `.env.template` and rename it to `.env`.
+3. Open the `.env` file in a text editor.
+4. Replace the values of the environment variables as needed with your specific environment configuration.
+5. Run the following commands:
 
 ```sh
-  docker compose up -d
+npm install
+npm run dev
+npx prisma migrate dev
+npx prisma generate
 ```
 
-To set environment variables, follow these steps:
-
-1. Rename the file `.env.template` to `.env`.
-2. Open the `.env` file in a text editor.
-3. Replace the values of the environment variables as needed with your specific environment configuration.
-4. Run SEED to create the local database(localhost:3000/api/seed)
-
-To run the project, execute the following command:
+6. Run SEED to create the local database(localhost:3000/api/seed)
 
 Prisma commands:
 
 ```
 npx prisma init
-npx prisma migrate dev
-npx prisma generate
 ```
 
 ### Run tests
@@ -181,39 +181,21 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Marianela Muñoz Gutierrez**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Nelitaa](https://github.com/Nelitaa)
+- Twitter: [@MarianelaMunoz](https://twitter.com/MarianelaMunoz_)
+- LinkedIn: [Marianela-munoz](https://www.linkedin.com/in/marianela-munoz/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[responsive_design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -223,13 +205,9 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, give me a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
