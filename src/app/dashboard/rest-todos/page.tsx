@@ -1,8 +1,11 @@
+import { WidgetItem } from "@/components";
 
 export default function RestTodosPage() {
   return (
-    <div>
-      <h1>RestTodos Page</h1>
-    </div>
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      <WidgetItem />
+
+    </div>  
   );
 }
