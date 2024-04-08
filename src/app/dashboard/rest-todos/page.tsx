@@ -1,4 +1,5 @@
 import prisma from "@/lib/prisma";
+import { TodosGrid } from "@/todos";
 
 export const metadata = {
   title: 'List of tasks to do',
@@ -12,10 +13,7 @@ export default async function RestTodosPage() {
 
   return (
     <div>
-      <h1>Page REST Todos</h1>
-      {
-        JSON.stringify( todos )
-      }
+      <TodosGrid todos={ todos } />
     </div>
   );
 }
