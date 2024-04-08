@@ -1,11 +1,21 @@
-import { WidgetItem } from "@/components";
+import prisma from "@/lib/prisma";
 
-export default function RestTodosPage() {
+export const metadata = {
+  title: 'List of tasks to do',
+  description: 'REST Todos page',
+};
+
+
+export default async function RestTodosPage() {
+
+  const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
+
   return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-
-      <WidgetItem />
-
-    </div>  
+    <div>
+      <h1>Page REST Todos</h1>
+      {
+        JSON.stringify( todos )
+      }
+    </div>
   );
 }
