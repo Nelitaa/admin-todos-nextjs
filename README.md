@@ -66,10 +66,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
+- **[add_todo]**
+- **[delete_todo]**
 - **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,14 +106,10 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:Nelitaa/admin-todos-nextjs.git
 ```
---->
 
 ### Install
 
@@ -142,12 +136,12 @@ To run the project, follow these steps:
 
 ```sh
 npm install
-npm run dev
 npx prisma migrate dev
 npx prisma generate
+npm run dev
 ```
 
-6. Run SEED to create the local database(localhost:3000/api/seed)
+6. Run SEED to create the local database(localhost:3000/api/seed). - Postman
 
 Prisma commands:
 
