@@ -33,3 +33,8 @@ export const addTodo = async( description: string ) => {
     }
   }
 }
+
+export const deleteCompleted = async(): Promise<void> => {
+  await prisma.todo.deleteMany({ where: { completed: true } });
+  revalidatePath('/dashboard/server-todos');
+}

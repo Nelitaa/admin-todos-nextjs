@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { IoTrashOutline } from "react-icons/io5";
-import { addTodo } from "../actions/todo-actions";
+import { addTodo, deleteCompleted } from "../actions/todo-actions";
 
 export const NewTodo = () => { 
 
@@ -15,11 +15,6 @@ export const NewTodo = () => {
     await addTodo(description);
     setDescription('');
   }
-
-  // const deleteCompleted = async () => {
-  //   await todosApi.deleteCompletedTodos();
-  //   router.refresh();
-  // }
 
   return (
     <form  onSubmit={ onSubmit } className='flex w-full'>
