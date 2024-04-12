@@ -28,8 +28,9 @@ export const TopMenu = () => {
             <CiChat1 size={25} />
           </button>
           <button className="flex items-center justify-center w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-            <CiBellOn size={25}/>
+            <CiBellOn size={25} />
           </button>
+
         </div>
       </div>
     </div>
