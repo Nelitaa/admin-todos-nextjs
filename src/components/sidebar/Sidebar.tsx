@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { CiLogout } from "react-icons/ci"
 import { SidebarItem } from "./SidebarItem"
-import { IoBasketOutline, IoCalendarOutline, IoCheckboxOutline, IoCodeWorkingOutline, IoListOutline } from "react-icons/io5"
+import { IoBasketOutline, IoCalendarOutline, IoCheckboxOutline, IoCodeWorkingOutline, IoListOutline, IoPersonOutline } from "react-icons/io5"
 import { getServerSession } from "next-auth"
 import { authOptions } from "@/app/api/auth/[...nextauth]/route"
 import { LogoutButton } from "./LogoutButton"
@@ -33,6 +33,11 @@ const menuItems = [
     title: 'Products',
     path: '/dashboard/products'
   },
+  {
+    icon: <IoPersonOutline />,
+    title: 'Profile',
+    path: '/dashboard/profile'
+  }
 ]
 
 export const Sidebar = async() => {
