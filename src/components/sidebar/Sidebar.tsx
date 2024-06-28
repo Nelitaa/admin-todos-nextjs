@@ -49,6 +49,7 @@ export const Sidebar = async() => {
     : 'https://tailus.io/sources/blocks/stats-cards/preview/images/second_user.webp';
 
   const userName = session?.user?.name ?? 'No name';
+  const userRoles = session?.user?.roles ?? ['client'];
   
   return (
     <aside className="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
@@ -72,7 +73,7 @@ export const Sidebar = async() => {
           height={150}
           />
           <h5 className="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">{ userName }</h5>
-          <span className="hidden text-gray-400 lg:block">Admin</span>
+          <span className="hidden text-gray-400 lg:block capitalize">{ userRoles.join(',') }</span>
         </div>
 
         <ul className="space-y-2 tracking-wide mt-8">
