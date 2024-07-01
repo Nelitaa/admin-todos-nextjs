@@ -30,20 +30,19 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client and Server</summary>
+Client and Server
+
   <ul>
     <li><a href="https://reactjs.org/">React</a></li>
     <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
     <li><a href="https://nextjs.org/">Next.js</a></li>
   </ul>
-</details>
 
 ### Key Features <a name="key-features"></a>
 
-- **[Create_RESTful_API]**
-- **[Implement_User_Authentication]**
-- **[Manage_Shopping_Cart]**
+- **CreateRESTful API**
+- **Implement User Authentication**
+- **Manage Shopping Cart**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +92,7 @@ Prisma commands:
 npx prisma init
 ```
 
-## Default User
+### Default User
 
 **user:** nela@test.com
 **password:** 123456
