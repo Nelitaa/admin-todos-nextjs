@@ -149,6 +149,11 @@ Prisma commands:
 npx prisma init
 ```
 
+## Default User
+
+**user:** nela@test.com
+**password:** 123456
+
 ### Run tests
 
 To run tests, run the following command:
